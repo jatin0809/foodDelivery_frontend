@@ -1,0 +1,69 @@
+.registerContainer {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+  
+.formContainer {
+    width: 50%;
+    padding: 40px;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+  width: 55%;
+}
+  
+.logo{
+    width: 25%;
+    margin: 0 auto ;
+  }
+.formContainer h2{
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0 auto;
+}
+.formContainer h2 span{
+  font-size: 2rem;
+}
+.formContainer p{
+  font-size: 1.15rem;
+  color: rgb(26, 25, 25);
+}
+  
+.para{
+ margin-top: 1.5rem;
+  color: gray;
+  font-size: 14px;
+}
+  
+.loginButton{
+  background: none;
+  border: none;
+  color: #FC8A06;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.right{
+  width: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.right img{
+    height: 105%;
+    width: 95%;
+    margin:  auto;
+}
+.footer{
+  margin-top: 8vh;
+}
