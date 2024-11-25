@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "./footer.module.css";
-import logo from "../../src/assets/logo-foot.png";
-import store from "../../src/assets/store-footer.png";
+import { store, fLogo } from '../../src/assets';
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { AiFillTikTok } from "react-icons/ai";
@@ -14,7 +13,7 @@ export default function Footer() {
       <div className={styles.top}>
         <div className={styles.address}>
             <div className={styles.add}>
-            <img className={styles.logo} src={logo} alt="" />
+            <img className={styles.logo} src={fLogo} alt="" />
             <img className={styles.store} src={store} alt="" />
             <p>Company # 490039-445, Registered with <br /> House of companies</p>
             </div>

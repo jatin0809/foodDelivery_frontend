@@ -1,0 +1,150 @@
+.container{
+    height: 75vh;
+    border: 1px solid #eeeded;
+    border-radius: 10px;
+    margin-top: 3vh;
+    position: relative;
+}
+.yellowBack{
+    height: 69vh;
+    width: 39%;
+    background-color:#FC8A06 ;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 200px;
+}
+.backImage{
+    height: 56vh;
+    width: 22vw;
+    position: absolute;
+    bottom: 0;
+    right: 19.5%;
+}
+.girl{
+    height: 66vh;
+    width: 48vw;
+    position: absolute;
+    bottom: 0;
+    right: 25.5%;
+}
+.third{
+    position: absolute;
+    bottom: 5vh;
+    right: 3.5vw;
+    height: 22vh;
+    width: 23vw;
+}
+.messageThree{
+    position: absolute;
+    top: 61vh;
+    right: 1.5vw;
+    font-size: 0.8vw;
+    height: 22vh;
+    width: 23vw;
+}
+.second{
+    position: absolute;
+    right: 0.5vw;
+    bottom: 26vh;
+    height: 22vh;
+    width: 23vw;
+}
+.messageTwo{
+    position: absolute;
+    font-size: 0.8vw;
+    width: 15vw;
+    height: 7vh;
+    bottom: 28vh;
+    right: 6.5vw;
+}
+.first{
+    position: absolute;
+    right: 7vw;
+    bottom: 46vh;
+    height: 22vh;
+    width: 23vw;
+}
+.messageOne{
+    position: absolute;
+    font-size: 0.8vw;
+    width: 15vw;
+    height: 7vh;
+    bottom: 48.5vh;
+    right: 13vw;
+}
+.left{
+    position: absolute;
+    top: 19vh;
+    left: 4vw;
+    width: 30vw;
+}
+.heading{
+    padding: 0%;
+    margin: 0%;
+    font-weight: 700;
+}
+.desc{
+    padding: 0%;
+    margin: 0%;
+}
+
+.intro{
+    font-weight: 450;
+    font-size: 1vw;
+    margin: 0;
+}
+.one{
+    margin-top: 2vh;
+    font-size: 3.3vw;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.25;
+}
+.two{
+    margin-top: 0%;
+    font-size: 3vw;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #FC8A06;
+    line-height: 1;
+    margin-bottom: 2vh;
+}
+.para{
+   font-size: 0.9vw;
+   line-height: 3;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    width: 70%; /* Adjust as needed */
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .inputContainer input {
+    flex: 1;
+    border: none;
+    padding: 15px ;
+    outline: none;
+    font-size: 1vw;
+    width: 9vw;
+  }
+  
+  .inputContainer button {
+    background-color: #FC8A06;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 2vw;
+    cursor: pointer;
+    font-size: 0.9vw;
+    font-weight: 600;
+    width: 20vw;
+  }
+  
+  .inputContainer button:hover {
+    background-color: #FC8A07; /* Optional: Hover effect */
+  }

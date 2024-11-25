@@ -1,0 +1,47 @@
+.container{
+    height: 6vh;
+    width: 100%;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 13vw;
+    height: 6vh;
+}
+
+.container ul{
+    display: flex;
+    gap: 2.5vw;
+    text-decoration: none;
+    margin: auto 0 ;
+    justify-content: space-between;
+    font-weight: 500;
+
+}
+.container ul li {
+    font-size: 1.1vw;
+    padding: 4px 1.5vw;
+}
+.active{
+    background-color:#FC8A06 ;
+    color: white;
+    border-radius: 30px;
+    padding-left: 2vw;
+}
+.user{
+    display: flex;
+    background-color: #03081F;
+    border-radius: 25px;
+    
+}
+.user p{
+    margin: 0;
+    color: white;
+}
+.user span{
+    margin: auto 0.5vw ;
+    margin-left: 0;
+    color: #FC8A06;
+    margin-top: 3px;
+}

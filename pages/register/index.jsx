@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import styles from "./register.module.css";
-import logo from "../../src/assets/logo-yellow.png";
+import { logo } from '../../src/assets';
 import { Form, Footer } from '../../components';
 import { useNavigate } from 'react-router-dom';
 
