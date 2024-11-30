@@ -1,0 +1,60 @@
+.container{
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ 
+.card{
+    height: 38vh;
+    width: 29vw;
+    margin-top: 1vh;
+    position: relative;
+}
+.space{
+    width: 6vw;
+    height: 10vh;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 45px;
+}
+.button{
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   right: 1vw;
+   bottom: 0.75vh;
+}
+.main{
+    height: 38vh;
+    width: 100%;
+    filter: brightness(50%);
+}
+.title{
+    position: absolute;
+    top: 27vh;
+    color: #FC8A06;
+    margin: 0 2vw;
+}
+.name{
+    position: absolute;
+    top: 30vh;
+    color: white;
+    margin: 0 2vw;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.card span{
+    background-color: #03081F;
+    color: white;
+    padding: 1vw 1.5vw;
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

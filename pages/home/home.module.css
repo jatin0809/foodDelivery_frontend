@@ -5,7 +5,10 @@
 
 .top{
     width: 90%;
-    height: 150vh;
     margin: 0 auto;
     /* background-color: bisque; */
+}
+
+.footer{
+    margin-top: 5vh;
 }

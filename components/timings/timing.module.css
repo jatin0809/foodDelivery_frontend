@@ -1,0 +1,56 @@
+.container{
+    height: 70vh;
+    width: 100%;
+    margin-top: 10vh;
+    display: flex;
+    box-shadow: 0px 5px 2px -4px rgba(128, 128, 128, 0.482);
+}
+.header{
+    display: flex;
+    margin-top: 10vh;
+    margin-left: 3vw;
+}
+.title{
+    font-size: 1.75vw;
+    font-weight: 600;
+    margin: 0 1vw;
+}
+
+.container img{
+    height: 35px;
+    width: 35px;
+}
+.left{
+    height: 100%;
+    width: 36%;
+}
+.list{
+    text-decoration: none;
+    margin: 3vh 3vw;
+    font-size: 0.9vw;
+}
+.container span{
+    font-weight: 600;
+}
+.list li {
+    margin-top: 2vh;
+}
+
+.mid{
+    height: 100%;
+    width: 30%;
+}
+.para{
+    line-height: 2;
+}
+.val{
+    font-size: 1.1vw;
+}
+.right{
+    height: 100%;
+    width: 34%;
+    background-color: #03081F;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

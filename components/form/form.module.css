@@ -16,7 +16,7 @@
     border-radius: 40px; 
     width: 100%; 
     box-sizing: border-box; 
-    font-size: 0.8rem; 
+    font-size: 0.9vw; 
   }
 
  
@@ -24,13 +24,8 @@
     width: 100%; 
   }
   
-  .errMessages {
-    color: red; 
-    font-size: 0.875rem; 
-    margin-top: 1px; 
-    line-height: 0; 
-    padding: 0; 
-    height: 5px; 
+  .label{
+    font-size: 0.9vw;
   }
   
   .submitButton {
@@ -39,7 +34,7 @@
     border: none; 
     border-radius: 20px; 
     padding: 10px 1rem;
-    font-size: 1.3rem; 
+    font-size: 1.2vw; 
     cursor: pointer; 
     transition: background-color 0.3s; 
     width: 100%; 

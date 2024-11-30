@@ -27,29 +27,29 @@
     margin-top: 15vh;
   }
 .formContainer h2{
-  font-size: 1.6rem;
+  font-size: 1.5vw;
   font-weight: 700;
   margin-bottom: 0 auto;
 }
 .formContainer h2 span{
-  font-size: 2rem;
+  font-size: 2vw;
 }
 .formContainer p{
-  font-size: 1.15rem;
+  font-size: 1.1vw;
   color: rgb(26, 25, 25);
 }
   
 .para{
  margin-top: 1.5rem;
   color: gray;
-  font-size: 14px;
+  font-size: 1vw;
 }
   
 .loginButton{
   background: none;
   border: none;
   color: #FC8A06;
-  font-size: 16px;
+  font-size: 1.2vw;
   cursor: pointer;
 }
 

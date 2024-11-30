@@ -1,0 +1,75 @@
+.container{
+    width: 100%;
+    height: 72vh;
+    margin-top: 5vh;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    position: relative;
+}
+.heading{
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    right: 6vw;
+}
+.heading img{
+    margin: 0;
+    margin-top: 5px;
+    padding: 0%;
+    width: 16vw;
+    height: 7.5vh;
+}
+.heading h1{
+    line-height: 0;
+    font-size: 3.5vw;
+}
+.subHeading span{
+    color: #FC8A06;
+    text-decoration: underline;
+}
+.subHeading{
+    background-color: #03081F;
+    color: white;
+    width: 55%;
+    font-size: 2.75vw;
+    font-weight: 500;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1vh 0;
+    position: absolute;
+    top: 30vh;
+    right: 4vw;
+}
+.subHeading p{
+    padding: 6px;
+    margin: 0 3vw;
+   
+}
+.desc{
+    font-size: 1.2vw;
+    position: absolute;
+    top: 40vh;
+    right: 7.5vw;
+}
+.store{
+    position: absolute;
+    top: 48vh;
+    right: 9vw;
+    width: 23vw;
+    height: 6vh;
+}
+.left{
+    position: absolute;
+    bottom: 0;
+    left: 4vw;
+    height: 70vh;
+    width: 45vw;
+}
+.shadow{
+    position: absolute;
+    bottom: 0;
+    left: 2.5vw;
+    height: 70vh;
+    width: 45vw;
+}

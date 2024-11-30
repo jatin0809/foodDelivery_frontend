@@ -12,7 +12,7 @@ img{
 
 .container ul{
     display: flex;
-    gap: 2.5vw;
+    gap: 2.25vw;
     text-decoration: none;
     margin: auto 0 ;
     justify-content: space-between;
@@ -20,8 +20,9 @@ img{
 
 }
 .container ul li {
-    font-size: 1.1vw;
+    font-size: 1vw;
     padding: 4px 1.5vw;
+    padding-top: 8px;
 }
 .active{
     background-color:#FC8A06 ;

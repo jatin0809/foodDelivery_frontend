@@ -1,0 +1,56 @@
+.container{
+    height: 30vh;
+    width: 28vw;
+    background-color: aqua;
+}
+.card{
+    height: 30vh;
+    width: 29vw;
+    background-color: white;
+    position: relative;
+    line-height: 1.25;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.main{
+    height: 26vh;
+    width: 11vw;
+    position: absolute;
+    right: 1.25vw;
+    top: 2vh;
+}
+.title{
+    font-size: 1.1vw;
+    font-weight: 600;
+    width: 13vw;
+    margin-top: 5vh;
+    margin-left: 2vw;
+}
+.description{
+    font-size: 0.9vw;
+    width: 14vw;
+    margin-left: 2vw;
+}
+.price{
+    font-size: 1.2vw;
+    font-weight: 600;
+    position: absolute;
+    left: 2vw;
+    bottom: 2vh;
+}
+.space{
+    width: 5vw;
+    height: 8vh;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vh;
+    background-color: white;
+    border-top-left-radius: 30px;
+}
+.plus{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 2vw;
+    bottom: 2.5vh;
+}

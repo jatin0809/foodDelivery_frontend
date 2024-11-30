@@ -4,23 +4,24 @@ import styles from "./register.module.css";
 import { logo } from '../../src/assets';
 import { Form, Footer } from '../../components';
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
+import { register } from '../../services/auth';
 
 export default function Register() {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
+    number: "",
     email: "",
     password: "",
   });
 
+
   const handleChange = (e) =>{
     const {name, value} = e.target;
     setFormData({...formData, [name]: value});
-    if(error[name]){
-      setError((prev)=> ({...prev, [name]: false}))
-    }
   };
 
   const formFields = [
@@ -33,11 +34,11 @@ export default function Register() {
         onChange: handleChange
     },
     {
-      name: "phone",
+      name: "number",
       label: "Phone Number",
       type: "text",
       placeholder: "Enter your 10 digit mobile number",
-      value: formData.phone,
+      value: formData.number,
       onChange: handleChange
     },
     {
@@ -58,12 +59,44 @@ export default function Register() {
     }
   ]
 
+  const validateForm = () => {
+    if (!formData.name.trim()) {
+      toast.error("Enter a valid Name");
+      return false;
+    }
+    if (formData.number.trim().length !== 10) {
+      toast.error("Enter valid 10 digit number");
+      return false;
+    }
+    if (!formData.email.trim()) {
+      toast.error("Provide a valid Email");
+      return false;
+    }
+    if (!formData.password.trim()) {
+      toast.error("Provide a valid Password");
+      return false;
+    }
+    return true;
+  };
+  
+
   const onSubmit = async (e) =>{
     e.preventDefault();
     console.log(formData);  
 
+    if(validateForm()){
+      const res = await register(formData);
+      if(res.status === 201){
+        alert("Registered Successfully");
+        navigate("/login");
+      }
+      else{
+        alert("Something went wrong");
+      }
+    }
 
-    console.log(error);
+
+
   }
   return (
     <div className={styles.mainContainer}>
@@ -74,6 +107,7 @@ export default function Register() {
             <h2>Welcome  <span className={styles.wave}>👋</span></h2>
             <p>Today is a new day. It's your day. You shape it. <br /> Sign up to start ordering</p>
             <Form   formFields={formFields} onSubmit={onSubmit} buttonLabel="Continue" />
+            <ToastContainer />
           </div>
           <p className={styles.para}>Already have an account ?
             <button  className={styles.loginButton} onClick={()=> navigate("/login")} >Sign in</button> </p>

@@ -1,0 +1,112 @@
+.container{
+    width: 100%;
+    height: 95vh;
+    margin-top: 5vh;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.space{
+    width: 100%;
+    height: 10vh;
+}
+.top ul{
+    display: flex;
+    justify-content: space-between;
+
+    margin: auto 1vw;
+    margin-right: 8vw;
+    padding: 0;
+    text-decoration: none;
+}
+.top ul li {
+    font-size: 1vw;
+    padding: 1.5vh 1vw;
+}
+.active{
+    border: 1px solid red;
+    border-radius: 25px;
+}
+.top p{
+    margin: auto 1vw;
+    margin-left: 8vw;
+    padding: 0;
+    font-size: 2vw;
+    font-weight: 700;
+}
+.box{
+    width: 82%;
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 5vh;
+    display: grid;
+    background-color: white;
+    border-radius: 12px;
+    grid-template-columns: 40% 60%;
+}
+
+.left{
+    height: 60vh;
+    text-align: center;
+}
+.left ul {
+    text-decoration: none;
+    margin: 0 3vw;
+    margin-top: 3vh;
+}
+.left ul li {
+    font-size: 1vw;
+    font-weight: 500;
+    margin: 3vh 1vw;
+    padding: 8px 0;
+}
+.selected{
+    background-color:#FC8A06 ;
+    border-radius: 30px;
+    width: 60%;
+    margin: auto ;
+    margin-top: 10vh;
+    padding: 10px 10px;
+}
+.right{
+    height: 60vh;
+    text-align: center;
+}
+.steps{
+    width: 95%;
+    margin: auto;
+    height: 35vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    height: 100%;
+    width: 32%;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+.name{
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.card img{
+    width: 70%;
+    height: 50%;
+}
+.description{
+    font-size: 0.8vw;
+    font-weight: 500;
+    margin: auto 1vw;
+}
+.footer{
+    font-size: 0.9vw;
+    margin: 2vh 3vw;
+}

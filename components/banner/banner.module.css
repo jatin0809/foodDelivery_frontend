@@ -39,7 +39,7 @@
     position: absolute;
     top: 61vh;
     right: 1.5vw;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     height: 22vh;
     width: 23vw;
 }
@@ -52,7 +52,7 @@
 }
 .messageTwo{
     position: absolute;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     width: 15vw;
     height: 7vh;
     bottom: 28vh;
@@ -67,7 +67,7 @@
 }
 .messageOne{
     position: absolute;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     width: 15vw;
     height: 7vh;
     bottom: 48.5vh;
@@ -75,7 +75,7 @@
 }
 .left{
     position: absolute;
-    top: 19vh;
+    top: 22vh;
     left: 4vw;
     width: 30vw;
 }
@@ -91,19 +91,19 @@
 
 .intro{
     font-weight: 450;
-    font-size: 1vw;
+    font-size: 0.9vw;
     margin: 0;
 }
 .one{
     margin-top: 2vh;
-    font-size: 3.3vw;
+    font-size: 2.8vw;
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 1.25;
 }
 .two{
     margin-top: 0%;
-    font-size: 3vw;
+    font-size: 2.8vw;
     font-weight: 700;
     letter-spacing: 1px;
     color: #FC8A06;
@@ -111,7 +111,7 @@
     margin-bottom: 2vh;
 }
 .para{
-   font-size: 0.9vw;
+   font-size: 0.8vw;
    line-height: 3;
 }
 
@@ -127,7 +127,7 @@
   .inputContainer input {
     flex: 1;
     border: none;
-    padding: 15px ;
+    padding: 0.9vw ;
     outline: none;
     font-size: 1vw;
     width: 9vw;

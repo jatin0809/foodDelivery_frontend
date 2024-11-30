@@ -1,0 +1,44 @@
+.container{
+    height: 38vh;
+    width: 100%;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container p {
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin: 0 1vw;
+}
+.rest{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 15.5%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: 24vh;
+    margin: 0;
+}
+.name{
+    color: white;
+    background-color: #FC8A06;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    height: 100%;
+}
+.name p {
+    font-size: 0.9vw;
+    margin-top: 1.5vh;
+}

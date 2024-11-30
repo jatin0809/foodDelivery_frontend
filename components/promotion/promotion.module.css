@@ -1,0 +1,57 @@
+.container{
+    width: 100%;
+    height: 50vh;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    height: 50vh;
+    width: 49%;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 100%;  
+    filter: brightness(50%);
+}
+.title{
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #000;
+    margin: 0;
+    padding: 1vh 2vw;
+    position: absolute;
+    top: 0;
+    left: 7%;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.description{
+    color: #FC8A06;
+    position: absolute;
+    top: 25vh;
+    left: 7%;
+    font-size: 1.1vw;
+}
+
+.name{
+    position: absolute;
+    top: 25vh;
+    left: 7%;
+    color: white;
+    font-size: 2.6vw;
+    font-weight: 700;
+}
+.button{
+    all: unset;
+    position: absolute;
+    top: 40vh;
+    left: 7%;
+    color: white;
+    background-color: #FC8A06;
+    font-size: 1.25vw;
+    padding: 10px 2.5vw;
+    border-radius: 30px;
+}
