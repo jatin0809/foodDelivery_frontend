@@ -18,10 +18,12 @@ import gArrow from "./gArrow.png"
 import dArrow from "./dArrow.png"
 import scooter from "./scooter.png"
 import pickup from "./pickup.png"
+import fArrow from "./fArrow.png"
+import bArrow from "./bArrow.png"
 
 
 
 export {
     arrow, basket, location, star, store, fLogo, logo, bike, completed, stars, clock, verified,
-     tracking, plus, cart, remove, gArrow, dArrow, pickup, scooter
+     tracking, plus, cart, remove, gArrow, dArrow, pickup, scooter,fArrow, bArrow
 }

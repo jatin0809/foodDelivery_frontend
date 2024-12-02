@@ -1,22 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import styles from "./home.module.css";
 import { Footer, Header, Navbar, Banner, Deals, Category, Restourants, Bannertwo, Promotion, Workflow, Display } from '../../components';
 import { getImages } from '../../services/images';
+import { AppContext } from '../../context/AppContext';
 
 export default function Home() {
   
-  const [data, setData] = useState([]);
-
-  const fetchData = async ()=>{
-    const res = await getImages()
-    setData(res);
-    console.log(res)
-  }
-
-  useEffect(()=> {
-    fetchData();
-  },[]);
-
+  const {data} = useContext(AppContext);
 
   return (
     <div className={styles.container}>

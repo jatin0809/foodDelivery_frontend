@@ -53,4 +53,8 @@
     width: 40px;
     right: 2vw;
     bottom: 2.5vh;
+    cursor: pointer;
+}
+.plus:active{
+    transform: scale(1.2);
 }

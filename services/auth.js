@@ -18,3 +18,8 @@ export const login = async (data) => {
     return res;
 }
 
+export const getUser = async (id) => {
+    const res = axios.get(`${import.meta.env.VITE_BASE_URL}/api/v1/user/${id}`);
+    return (await res).data;
+}
+

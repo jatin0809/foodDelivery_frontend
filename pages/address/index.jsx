@@ -1,9 +1,17 @@
 import React from 'react'
+import styles from "./address.module.css"
+import { Header, Navbar, Footer } from '../../components'
 
 export default function Address() {
   return (
-    <div>
-      Address Page
+    <div className={styles.container}>
+      <div className={styles.top}>
+        <Header />
+        <Navbar />
+      </div>
+      <div className={styles.footer}>
+        <Footer />
+      </div>
     </div>
   )
 }

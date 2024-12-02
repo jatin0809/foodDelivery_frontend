@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: bisque; */
+}
+
+.footer{
+    margin-top: 5vh;
+}

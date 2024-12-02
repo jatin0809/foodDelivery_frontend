@@ -1,8 +1,13 @@
 import React from 'react'
 import styles from "./cart.module.css"
-import { basket, cart, remove, gArrow, dArrow, pickup, scooter } from '../../src/assets'
+import { basket, cart, remove, gArrow, dArrow, pickup, scooter, fArrow } from '../../src/assets'
+import { decreaseProductCount } from '../../services/cart'
+import {useNavigate} from "react-router-dom";
 
-export default function Cart({items, price}) {
+
+export default function Cart({items, price, setUpdate}) {
+  const userId = localStorage.getItem("userId");
+  const navigate = useNavigate();
 
   return (
     <div className={styles.container}>
@@ -23,7 +28,7 @@ export default function Cart({items, price}) {
                   <p className={styles.price} >₹ {item.price}</p>
                   <p className={styles.name} >{item.productName}</p>
                 </div>
-                <img className={styles.remove} src={remove} alt="" />
+                <img className={styles.remove} src={remove} onClick={()=> {decreaseProductCount(userId, item.productId); setUpdate(false)}} alt="" />
               </div>
             ))
           }
@@ -40,11 +45,22 @@ export default function Cart({items, price}) {
         </div>
 
         <div className={styles.bottom}>
-        <div className={styles.con2}>
-          <div className={styles.delivery}></div>
-          <div className={styles.collect}></div>
-        </div>
-        <div className={styles.checkout}></div>
+          <div className={styles.con2}>
+            <div className={styles.delivery}>
+              <img src={scooter} alt="" />
+              <p>Delivery</p>
+              <span>Starts at 10:50</span>
+            </div>
+            <div className={styles.collect}>
+              <img src={pickup} alt="" />
+              <p>Collection</p>
+              <span>Starts at 10:00</span>
+            </div>
+          </div>
+          <div  className={`${styles.checkout} ${price > 200 ? styles.active : ""}`} onClick={price > 200 ? () => navigate("/checkout") : undefined}>
+            <img src={fArrow} alt="" />
+            <span>Checkout!</span>
+          </div>
       </div>
       
       </div>

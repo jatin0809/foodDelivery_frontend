@@ -24,6 +24,20 @@ export const addToCart = async (userId, productId, productName, productImage, pr
   }
 };
 
+// remove product from cart
+export const decreaseProductCount = async (userId, productId) => {
+  try {
+    const payload = {
+      userId,
+      productId,
+    };
+
+    await axios.post(`${import.meta.env.VITE_BASE_URL}/api/v1/cart/remove`, payload);
+  } catch (error) {
+    console.error("Error in decreasing product count:", error);
+  }
+};
+
 export const fetchCartByUserId = async (userId) => {
   try {
     const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/api/v1/cart/${userId}`);

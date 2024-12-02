@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .top{
     width: 100%;
@@ -15,7 +15,7 @@
 }
 .basket{
     width: 100%;
-    height: 130vh;
+    height: auto;
     background-color: #F9F9F9;
     border: 1px solid #00000033;
     margin-top: 3vh;
@@ -82,6 +82,10 @@ margin-top: 1vh;
 height: 30px;
 width: 30px;
 margin: auto 0;
+cursor: pointer;
+}
+.remove:active{
+    transform: scale(1.2);
 }
 
 .cal{
@@ -148,23 +152,63 @@ border-radius: 30px;
 
 .bottom{
     width: 100%;
-    height: 25vh;
-    background-color: aqua;
+    height: auto;
 }
-.cont2{
+.con2{
     width: 100%;
     display: flex;
-    height: auto;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 2vh 0;
     
 }
+.con2 img{
+    width: 2.5vw;
+    height: 5vh;
+    margin: 1vh 3.25vw;
+}
+.con2 p{
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1;
+}
+.con2 span{
+    font-size: 1vw;
+    margin: 0 1.1vw;
+}
 .delivery{
-    width: 40%;
-    height: 30vh;
-    border: 1px solid gray;
+    width: 43%;
+    height: 15vh;
+    border: 1px solid #00000033;
+    border-radius: 10px;
 }
 .collect{
-    width: 40%;
-    height: 30vh;
-    border: 1px solid gray;
+    width: 43%;
+    height: 15vh;
+    border-left: 1px solid #00000033;
 }
+.checkout{
+    width: 94%;
+    height: 10vh;
+    margin: 2vh auto;
+    background-color: #FFB1B1;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+}
+.active{
+    background-color: #028643;
+    cursor: pointer;
+}
+
+.checkout img{
+    width: 40px;
+    height: 40px;
+    margin: 2.2vh 2vh;
+}
+.checkout span{
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin: 3vh 2vw;
+}
+

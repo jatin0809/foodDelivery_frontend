@@ -1,10 +1,17 @@
 import React from 'react'
+import styles from "./notFound.module.css"
+import { Header, Navbar, Footer } from '../../components'
 
 export default function NotFound() {
   return (
-    <div>
-      <h1>404</h1>
-      <h2>Not Found</h2>
+    <div className={styles.container}>
+      <div className={styles.top}>
+        <Header />
+        <Navbar />
+      </div>
+      <div className={styles.footer}>
+        <Footer />
+      </div>
     </div>
   )
 }

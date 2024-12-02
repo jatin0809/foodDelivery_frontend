@@ -1,27 +1,12 @@
 import React from 'react'
 import styles from "./product.module.css"
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Footer, Header, Navbar, Bannerthree, Restourants, Testimonial, Map, Timings, SearchBar, ProductList } from '../../components'
-import { getImages } from '../../services/images';
-import { getReviews } from '../../services/reviews';
+import { AppContext } from '../../context/AppContext';
 
 export default function Products() {
 
-  const [data, setData] = useState([]);
-  const [testimonialData, setTestimonialData] = useState([]);
-
-
-  const fetchData = async ()=>{
-    const res = await getImages()
-    const rev = await getReviews()
-    setTestimonialData(rev)
-    setData(res);
-  }
-
-    useEffect(()=> {
-      fetchData();
-    },[]);
-
+  const {data, testimonialData} = useContext(AppContext) 
 
   return (
     <div className={styles.container}>
