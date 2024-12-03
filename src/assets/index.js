@@ -20,10 +20,15 @@ import scooter from "./scooter.png"
 import pickup from "./pickup.png"
 import fArrow from "./fArrow.png"
 import bArrow from "./bArrow.png"
+import mapPin from "./mapPin.png"
+import add from "./add.png"
+import Wallet from "./Wallet.png"
+import done from "./done.png"
+import profile from "./profile.png"
 
 
 
 export {
-    arrow, basket, location, star, store, fLogo, logo, bike, completed, stars, clock, verified,
-     tracking, plus, cart, remove, gArrow, dArrow, pickup, scooter,fArrow, bArrow
+    arrow, basket, location, star, store, fLogo, logo, bike, completed, stars, clock, verified, profile,
+     tracking, plus, cart, remove, gArrow, dArrow, pickup, scooter,fArrow, bArrow, mapPin, add, Wallet, done
 }

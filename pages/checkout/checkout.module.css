@@ -5,20 +5,20 @@
 
 .top{
     width: 90%;
-    margin: 0 auto;
+    margin: 2vh auto;
     /* background-color: bisque; */
 }
-.heading{
+.mainheading{
     display: flex;
     align-items: center;
     margin: 5vh 0;
 }
-.heading img{
+.mainheading img{
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
-.heading span{
+.mainheading span{
     font-size: 2vw;
     font-weight: 700;
     margin: auto 1vw;
@@ -102,8 +102,81 @@ line-height: 1;
 .right{
     height: 40vh;
     width: 40%;
-    background-color: aquamarine;
 }
+.inputContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 90%; 
+    margin: 1vh auto;
+    cursor: pointer;
+  }
+  
+  .logo img {
+    width: 30px; /* Adjust logo size */
+    height: 30px;
+    margin: auto 0.5vw;
+  }
+  
+  .textContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading {
+    font-size: 1.1vw;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 0.9vw;
+    margin: 0;
+    color: #666;
+  }
+  .item{
+    width: 95%;
+    margin: 2vh auto;
+    height: 10vh;
+    border-top: 1px solid rgb(109, 109, 109);
+    border-bottom: 1px solid rgb(109, 109, 109);
+  }
+  .item p {
+    line-height: 1;
+    color: gray;
+    font-size: 1vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh 1vw;
+  }
+  .subTotal{
+    font-size: 1.25vw;
+    line-height: 1;
+    color: gray;
+    width: 92%;
+    margin: 2vh auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .subTotal span{
+    font-weight: 600;
+    color: black;
+  }
+  .button{
+    width: 94%;
+    margin: 2vh 1vw;
+    font-size: 1.2vw;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #FC8A06;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
 .footer{
     margin-top: 5vh;
 }

@@ -3,6 +3,7 @@ import { fetchCartByUserId } from "../services/cart";
 import { getImages } from "../services/images";
 import { getReviews } from "../services/reviews";
 import { getUser } from "../services/auth";
+import { fetchAddressByUserId } from "../services/address";
 
 export const AppContext = createContext();
 
@@ -15,9 +16,22 @@ export const AppContextProvider = ({children}) => {
     const [testimonialData, setTestimonialData] = useState([]);
     const [loadingCart, setLoadingCart] = useState(false);
     const [user, setUser] = useState([]);
+    const [userName, setUserName] = useState("");
+    const [address, setAddress] = useState([]);
+    const [defaultAddress, setDefaultAddress] = useState([]);
+    const [updateAdd, setUpdateAdd] = useState(true)
 
 
 
+    const fetchAddress = async () =>{
+        const addressData = await fetchAddressByUserId(userId);
+        const defAddress = await addressData.address.addresses.find((address) => address.isDefault);
+        const addres = await addressData.address.addresses
+        setAddress(addres)
+        setDefaultAddress(defAddress)
+        
+    }
+    // console.log(address);
 
     const fetchCart = async () =>{
         setLoadingCart(true);
@@ -31,7 +45,6 @@ export const AppContextProvider = ({children}) => {
             setLoadingCart(false);
         }
     }
-    console.log(user)
 
     const fetchData = async ()=>{
         const res = await getImages()
@@ -40,21 +53,28 @@ export const AppContextProvider = ({children}) => {
         setTestimonialData(rev)
         setData(res);
         setUser(detail)
+        setUserName(detail.name)
       }
 
       useEffect(()=> {
         fetchData();
+        fetchAddress();
       },[]);
 
     useEffect(()=> {
         fetchCart()
         setUpdate(true)
     },[update]);
+    
+    useEffect(()=>{
+        fetchAddress()
+        setUpdateAdd(true)
+    }, [updateAdd])
 
 
 
     const values = {
-        update, setUpdate, cartData, showCart, data, testimonialData, loadingCart, user
+        update, setUpdate, cartData, showCart, data, testimonialData, loadingCart, user, userName, address, defaultAddress, setUpdateAdd
     };
     
     return <AppContext.Provider value={values}>{children}</AppContext.Provider>

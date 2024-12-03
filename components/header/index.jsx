@@ -1,9 +1,14 @@
 import React from 'react'
 import styles from "./header.module.css"
+import { useContext } from 'react'
+import { AppContext } from '../../context/AppContext'
+import { useNavigate } from 'react-router-dom'
 import { arrow, basket, location, star } from '../../src/assets'
 
 
 export default function Header() {
+  const {defaultAddress} = useContext(AppContext);
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
             <div className={styles.side}>
@@ -13,7 +18,10 @@ export default function Header() {
 
             <div className={styles.side}>
             <img src={location} alt="" />
-            <p>  Regent Street, A4, A4201, London <span> Change Location</span></p>
+            {
+              defaultAddress? <p> {defaultAddress.street}, {defaultAddress.city} <span className={styles.link} onClick={()=>navigate("/address")}> Change Location</span></p> :
+              <p> your street, 114 <span className={styles.link} onClick={()=>navigate("/address")}> Add Location</span></p>
+            }
             </div>
           <div className={styles.box}>
             <div className={styles.one}>

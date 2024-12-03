@@ -6,9 +6,142 @@
 .top{
     width: 90%;
     margin: 0 auto;
-    /* background-color: bisque; */
+}
+.mainheading{
+    display: flex;
+    align-items: center;
+    margin: 5vh 0;
+}
+.mainheading img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.mainheading span{
+    font-size: 2vw;
+    font-weight: 700;
+    margin: auto 1vw;
+}
+.paymentContainer{
+    width: 100%;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
+.topLine{
+    width: 98%;
+    height: 8vh;
+    border: 1px solid #FFE8CE;
+    border-radius: 40px;
+    position: relative;
+}
+.topLine img{
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    background-color: antiquewhite;
+    margin: 6px 1vw;
+}
+.walletTitle{
+    font-weight: 600;
+    font-size: 1.2vw;
+    position: absolute;
+    top: 1vh;
+}
+.walletValue{
+    color: gray;
+    font-size: 1vw;
+    position: absolute;
+    top: 4vh;
+}
+hr{
+    width: 95%;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    gap: 1rem;
+    margin-top: 3vh;
+  }
+  
+  .paymentOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+  }
+
+  
+  .methodDetails {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo {
+    font-weight: bold;
+    color: orange;
+    font-size: 1.5rem;
+  }
+  
+  .name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .radio {
+    accent-color: orange;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+
+  .debit{
+    font-size: 1.1vw;
+    margin: 3vh 1vw;
+  }
+
+.box{
+    width: 95%;
+    height: 15vh;
+    margin: 1vh auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.box p{
+    font-size: 1.25vw;
+    line-height: 1;
+    color: gray;
+    margin: 0 1vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 0;
+    border-bottom: 1px solid gray;
+}
+.val{
+    color: black;
+    font-weight: 700;
+}
+.button{
+    border: none;
+    width: 95%;
+    margin: 1vh 1vw;
+    padding: 10px 2px;
+    color: white;
+    font-size: 1.2vw;
+    background-color:#FC8A06 ;
+    border-radius: 40px;
+    cursor: pointer;
+}
 .footer{
     margin-top: 5vh;
 }

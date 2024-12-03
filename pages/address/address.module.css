@@ -8,7 +8,106 @@
     margin: 0 auto;
     /* background-color: bisque; */
 }
-
+.mainheading{
+    display: flex;
+    align-items: center;
+    margin: 5vh 0;
+}
+.mainheading img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.mainheading span{
+    font-size: 2vw;
+    font-weight: 700;
+    margin: auto 1vw;
+}
+.addressContainer{
+    width: 100%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.add{
+    width: 16vw;
+    height: 22vh;
+    margin: 1vh 1vw;
+    border: 1px dashed gray;
+    border-radius: 10px;
+    position: relative;
+}
+.add img{
+    height: 35px;
+    width: 35px;
+    padding: 10px;
+    background-color: rgba(250, 206, 220, 0.408);
+    position: absolute;
+    top: 5vh;
+    left: 6vw;
+    border-radius: 80px;
+    cursor: pointer;
+}
+.add p{
+    font-size: 1.1vw;
+    font-weight: 500;
+    position: absolute;
+    top: 11vh;
+    left: 4.5vw;
+}
+.right{
+    display: flex;
+}
+.card{
+    width: 16vw;
+    height: 22vh;
+    margin: 1vh 1vw;
+    border: 1px solid gray;
+    border-radius: 10px;
+    line-height: 1;
+    position: relative;
+}
+.default{
+    font-size: 0.7vw;
+    padding: 3px 12px;
+    border-radius: 20px;
+    background-color: rgba(250, 206, 220, 0.408);
+    color: #FC8A06;
+    position: absolute;
+    top: 0;
+    right: 1vw;
+}
+.userName{
+    font-size: 0.9vw;
+    font-weight: 500;
+    margin: 2vh 1vw;
+}
+.street{
+    font-size: 0.9vw;
+    margin: 1vh 1vw;
+}
+.phone{
+    font-size: 0.9vw;
+    margin: 1vh 1vw;
+}
+.edit{
+    font-size: 0.8vw;
+    color:#FC8A06 ;
+    position: absolute;
+    bottom: 0;
+    left: 1vw;
+    cursor: pointer;
+}
+.remove{
+    font-size: 0.8vw;
+    color:#FC8A06 ;
+    position: absolute;
+    bottom: 0;
+    left: 3vw;
+    padding-left: 0.5vw;
+    border-left: 1px solid gray;
+    cursor: pointer;
+}
 .footer{
     margin-top: 5vh;
 }

@@ -25,6 +25,9 @@
     text-decoration: underline;
     color: #FC8A06;
 }
+.link{
+    cursor: pointer;
+}
 .container img{
 width: 20px;
 height: 20px;

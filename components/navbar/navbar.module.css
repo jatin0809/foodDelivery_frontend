@@ -12,7 +12,6 @@ img{
 
 .container ul{
     display: flex;
-    gap: 2.25vw;
     text-decoration: none;
     margin: auto 0 ;
     justify-content: space-between;
@@ -34,6 +33,7 @@ img{
     display: flex;
     background-color: #03081F;
     border-radius: 25px;
+    cursor: pointer;
     
 }
 .user p{

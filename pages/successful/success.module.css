@@ -8,6 +8,41 @@
     margin: 0 auto;
     /* background-color: bisque; */
 }
+.mainContainer{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+.logo{
+    margin-top: 5vh;
+    width: 150px;
+    height: 150px;
+}
+.heading{
+    font-size: 1.3vw;
+    font-weight: 600;
+    line-height: 1;
+}
+.des{
+    color: gray;
+}
+.data{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 25%;
+    font-weight: 500;
+    margin: 1vh auto;
+}
+.button{
+    color: white;
+    background-color:#FC8A06 ;
+    padding: 7px;
+    width: 90%;
+    margin: 1vh auto;
+    border-radius: 30px;
+    cursor: pointer;
+}
 
 .footer{
     margin-top: 5vh;
