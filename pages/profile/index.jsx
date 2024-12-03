@@ -23,8 +23,10 @@ export default function Profile() {
   useEffect(() => {
     
     const fetchUserData = async () => {
-      const user = await getUser(userId);  
-      setUserData(user);
+      if(userId){
+        const user = await getUser(userId);  
+        setUserData(user);
+      }
     };
     fetchUserData();
   }, [userId]);

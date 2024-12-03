@@ -18,7 +18,7 @@ export default function Navbar() {
       <li>Special Offers</li>
       <li>Restourants</li>
       <li>Track Order</li>
-      <li onClick={()=> navigate("/profile")} className={styles.user}> <span><FaUserCircle /></span> <p> {userName ? userName : "Login/signup" }</p></li>
+      <li onClick={() => navigate(userName ? "/profile" : "/login")} className={styles.user}> <span><FaUserCircle /></span> <p> {userName ? userName : "Login/signup" }</p></li>
     </ul>
     </div>
   )

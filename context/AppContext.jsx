@@ -17,10 +17,11 @@ export const AppContextProvider = ({children}) => {
     const [loadingCart, setLoadingCart] = useState(false);
     const [user, setUser] = useState([]);
     const [userName, setUserName] = useState("");
+    const [isAddress, setIsAddress] = useState(false);
+    const [isCart, setIsCart] = useState(false)
     const [address, setAddress] = useState([]);
     const [defaultAddress, setDefaultAddress] = useState([]);
     const [updateAdd, setUpdateAdd] = useState(true)
-
 
 
     const fetchAddress = async () =>{
@@ -49,32 +50,43 @@ export const AppContextProvider = ({children}) => {
     const fetchData = async ()=>{
         const res = await getImages()
         const rev = await getReviews()
-        const detail = await getUser(userId)
         setTestimonialData(rev)
         setData(res);
+      }
+    const fetchUser = async ()=> {
+        const detail = await getUser(userId)
         setUser(detail)
         setUserName(detail.name)
-      }
+    }
+
 
       useEffect(()=> {
         fetchData();
-        fetchAddress();
+        if(userId){
+            fetchUser();
+        }
       },[]);
+      
 
     useEffect(()=> {
-        fetchCart()
-        setUpdate(true)
+        if(isCart){
+            fetchCart()
+            setUpdate(true)
+        }
     },[update]);
     
     useEffect(()=>{
-        fetchAddress()
-        setUpdateAdd(true)
+        if(isAddress){
+            fetchAddress()
+            setUpdateAdd(true)
+        }
     }, [updateAdd])
 
 
 
     const values = {
-        update, setUpdate, cartData, showCart, data, testimonialData, loadingCart, user, userName, address, defaultAddress, setUpdateAdd
+        update, setUpdate, cartData, showCart, data, testimonialData, loadingCart, user, userName, address, defaultAddress,
+         setUpdateAdd, setIsAddress, setIsCart
     };
     
     return <AppContext.Provider value={values}>{children}</AppContext.Provider>

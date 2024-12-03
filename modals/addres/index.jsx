@@ -10,10 +10,10 @@ Modal.setAppElement("#root");
 
 export default function AddressModal({ isOpen, onRequestClose}) {
 
-    const {userName, setUpdateAdd} = useContext(AppContext);
+    const {userName, setUpdateAdd, setIsAddress } = useContext(AppContext);
     const userId = localStorage.getItem("userId");
 
-    const [formData, setFormData] = useState({
+    const [formData, setFormData,] = useState({
         state: "",
         city: "",
         pincode: "",
@@ -33,6 +33,7 @@ export default function AddressModal({ isOpen, onRequestClose}) {
     const res = await addAddressToDatabase(userId, userName, formData)
     if(res.success){
         setUpdateAdd(false)
+        setIsAddress(true)
     }
     else{
         console.log(res)
